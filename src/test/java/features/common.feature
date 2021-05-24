@@ -19,7 +19,7 @@ Scenario: Common step
 	And I select "selaccount" dropdown with data "Current"
 	And I select "selaccount" dropdown with data "Savings"
 	#button
-	And I click to "" button
+	And I click to "test" button
 	#regex
 	And I input first Account ID
 	And I input second Account ID
