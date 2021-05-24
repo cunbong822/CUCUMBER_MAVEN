@@ -1,0 +1,22 @@
+<suite parallel="testings" thread-count="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="runBankGuruTestCase.xsd" name="BANK GURU">
+
+	
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<listeners>
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			<listener class-name="reportConfig.ExtentReportListener" />
+		</listeners>
+		<classes>
+			<class name="com.bankguru.user.EditCustomer_Validation_CustomerPage_Fields" />
+			<class name="com.bankguru.user.NewCustomer_Validation_CustomerPage_Fields" />
+			<class name="com.bankguru.user.Payment_01_Create_new_customer_acc" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+
+</suite> <!-- Suite -->

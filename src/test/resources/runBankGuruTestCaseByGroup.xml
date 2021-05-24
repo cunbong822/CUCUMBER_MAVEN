@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="BANK GURU" thread-count="1">
+
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+
+		<listeners>
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			<listener class-name="reportConfig.ExtentReportListener" />
+		</listeners>
+		<group>
+			<run>
+				<include name="Address" />
+			</run>
+		</group>
+		<classes>
+			<class name="com.bankguru.user.EditCustomer_Validation_CustomerPage_Fields" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
